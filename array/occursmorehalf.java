@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//find in sorted order only
 public class occursmorehalf{
      public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
@@ -31,7 +31,7 @@ occursmorehalfarr(arr);
             if(c>m)
             {
                 l=c;
-            }-
+            }
             i++;
         }
         System.out.println(l);

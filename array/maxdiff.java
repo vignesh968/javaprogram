@@ -7,8 +7,7 @@ public class maxdiff {
         Scanner s=new Scanner(System.in);
         System.out.println("enter a size of array");
         int num=s.nextInt();
-     //   System.out.println("enter a target element of array");
-       // int target=s.nextInt();
+  
         System.out.println("enter a array elements");
         int arr[]=new int[num];
         for(int i=0;i<arr.length;i++)
