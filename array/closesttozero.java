@@ -1,12 +1,13 @@
 //Given an array A, Find two elements whose sum is closest to zero
-
+//84 69 59 0 -9 -79
+//it get sorted -79 -9 0 59 69 
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
 import javax.swing.text.html.parser.Element;
 
-public class sumzero {
+public class closesttozero {
         public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         System.out.println("enter a size of array");
@@ -41,22 +42,26 @@ sumzeroarr(arr);
     }
     public static void sumzeroarr(int arr[])
     {
+        int p=Integer.MAX_VALUE;
         int sum=0, left=0,right=arr.length-1;
+        int min_index=0,max_index=arr.length-1;
 while(left<right)
 {
 sum=arr[right]+arr[left];
-if(sum==0)
+if(sum<p)
 {
-    System.out.print( arr[left] +" "+arr[right]);
-    break;
+    p=sum;
+    min_index=right;
+    max_index=left;
 }
-else if(sum>0)
+else if(sum<0)
 {
-    right--;
-}
-else{
     left++;
 }
+else{
+    right--;
 }
+}
+System.out.println("the teo elements whose sumis closest ti "+arr[min_index]+" "+arr[max_index]);
     }
 }
