@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 //output
  //369 3 3 33 333 333
- // largest multiple of 3 is 369
+ // largest   multiple of 3 is 369
 public class largestmultiple3 {
        public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
