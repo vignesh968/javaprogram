@@ -25,7 +25,7 @@ public class squarerootbyefficientmethod {
         else if(msqr>n)
         {
             high=mid-1;
-            ans=mid;
+       
         }
         else
         {
@@ -34,6 +34,6 @@ public class squarerootbyefficientmethod {
         }
     }
  return ans;   
-}
+}  
     
 }
